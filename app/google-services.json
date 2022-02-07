@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "349284143559",
+    "project_id": "nrlm-mela-sale-71f1a",
+    "storage_bucket": "nrlm-mela-sale-71f1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349284143559:android:4634b7e51e72ec8b1909e2",
+        "android_client_info": {
+          "package_name": "com.nrlm.melasalesoffline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349284143559-ch31j20fp11ap0sbis2jfr3gh1g42mp4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nrlm.melasalesoffline",
+            "certificate_hash": "429a4174785c0c69d400dc236fa0474e7f6b9774"
+          }
+        },
+        {
+          "client_id": "349284143559-hdne0an3e5tt1oefbcro8eujjsu8bfe6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANwvWPBAV3YR2CCG2oTkfs-eDH1vued7g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "349284143559-hdne0an3e5tt1oefbcro8eujjsu8bfe6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

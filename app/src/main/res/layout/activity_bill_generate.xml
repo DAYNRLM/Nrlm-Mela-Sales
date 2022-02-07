@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.BillGenerateActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:id="@+id/pdfViewLL"
+        android:orientation="vertical">
+        <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space10dp"
+            card_view:cardElevation="@dimen/dimen_10"
+            android:translationZ="@dimen/dimen_10"
+            card_view:strokeColor="@color/cardViewBorder"
+            card_view:strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bill_invoice"
+                    android:textSize="22sp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="@color/white"
+                    android:background="@color/purple"
+                    android:gravity="center_horizontal"/>
+
+                <com.github.barteksc.pdfviewer.PDFView
+                    android:id="@+id/pdfView"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/space10dp">
+        <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/op"
+            card_view:cardElevation="@dimen/dimen_10"
+            android:translationZ="@dimen/dimen_10"
+            card_view:strokeColor="@color/cardViewBorder"
+            card_view:strokeWidth="2dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="@dimen/dimen_10"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/print_invoice"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_printer"
+                    android:layout_marginLeft="@dimen/dimen_10" />
+                <TextView
+                    android:id="@+id/downLoadPdfBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                   android:visibility="gone"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:background="@drawable/ic_download" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/op"
+        >
+
+        <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="@dimen/dimen_40"
+            card_view:strokeColor="@color/cardViewBorder"
+            card_view:strokeWidth="2dp"
+            card_view:cardCornerRadius="@dimen/dimen_10"
+            android:elevation="@dimen/dimen_10"
+            android:translationZ="@dimen/dimen_10"
+            android:layout_margin="@dimen/dimen_10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/home"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="@string/go_to_home"
+                android:textColor="@color/white"
+                android:background="@color/purple" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView  xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+            android:visibility="visible"
+            android:id="@+id/sendUrlCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:strokeColor="@color/cardViewBorder"
+            card_view:strokeWidth="2dp"
+            android:layout_alignParentRight="true"
+            android:elevation="@dimen/dimen_10"
+            card_view:cardCornerRadius="@dimen/dimen_10"
+            android:translationZ="@dimen/dimen_10"
+            android:layout_margin="@dimen/dimen_10">
+
+            <TextView
+
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="Send E-bill"
+                android:textColor="@color/white"
+                android:background="@color/purple" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

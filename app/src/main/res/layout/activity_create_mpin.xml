@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:id="@+id/topSetLinearLayout"
+        android:padding="16dp">
+
+        <TextView
+            android:fontFamily="@font/roboto_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_four_digit_mpin"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/dimen_10"/>
+
+        <com.alimuzaffar.lib.pin.PinEntryEditText
+            android:id="@+id/mpinEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:pinLineColors="@color/purple_200" />
+
+        <TextView
+            android:fontFamily="@font/roboto_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_your_mpin"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/dimen_10"/>
+
+        <com.alimuzaffar.lib.pin.PinEntryEditText
+            android:id="@+id/mpinConfirmEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:pinLineColors="@color/purple_200" />
+
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createMpinBtn"
+        android:padding="@dimen/space5dp"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_marginTop="@dimen/space10dp"
+        android:layout_marginLeft="@dimen/space5dp"
+        android:layout_marginRight="@dimen/space5dp"
+        android:layout_width="match_parent"
+        android:text="@string/create_mpin"
+        style="@style/OutlineIconTextButton" />
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<resources>
+
+    /************************java file all string***************************/
+    <string name="app_name">melaSalesOffline</string>
+    <string name="bottom_text">Design, hosted and maintained by NIC,Content provided by MORD.</string>
+    <string name="openDrawer">Drawer Open</string>
+    <string name="closeDrawer">Drawer Close</string>
+    <string name="scan_barcode_volume_up_down">Scan Barcode,Volume UP/DOWN for flash light ON/OFF</string>
+    <string name="product_not_registered">Product Not Registered</string>
+    <string name="something_wrong">Something wrong: </string>
+    <string name="done">Done</string>
+    <string name="history_for">History for </string>
+    <string name="loading">Loading...</string>
+    <string name="history_from">History from </string>
+    <string name="confirm_mpin_wrong">Confirm MPIN is wrong..</string>
+    <string name="first_enter_the_mpin">First Enter the MPIN..</string>
+    <string name="mpin_and_confirm_mpin_is_not_matched">Mpin and Confirm Mpin is not Match</string>
+    <string name="home">Home</string>
+    <string name="ok">ok</string>
+    <string name="data_not_found">Data Not Found...</string>
+    <string name="enter_valid_mobile_number">Enter valid Mobile Number</string>
+    <string name="enter_six_digit_passowrd">Enter your password</string>
+    //comman for java and xml
+    <string name="stall_no"> Stall No:- </string>
+    <string name="print_via_bluetooth">PrintViaBlueTooth</string>
+    <string name="message1">Message1</string>
+    <string name="message">Message</string>
+    <string name="device_connected">DeviceConnected</string>
+    <string name="permission_done">permission done.</string>
+    <string name="please_allow_the_permission">Please allow the permissions.</string>
+    <string name="entered_mpin_is_wrong">Entered MPin is wrong..</string>
+    <string name="scanning">Scanning....</string>
+    <string name="wifi_is_disabled_make_it_enabeld">Wifi is disabled.. making it enable</string>
+    <string name="password">Password:</string>
+    <string name="cancel">Cancel</string>
+    <string name="product_detail">Product Detail</string>
+    <string name="file_not_available">File not avalable</string>
+    <string name="total_price">Total Price</string>
+    //comman
+    <string name="no">No.</string>
+    <string name="rs_pice">Rs./unit</string>
+    <string name="rs">Rs.</string>
+    <string name="total_sum">total_Sum</string>
+    <string name="shg">SHG</string>
+    <string name="add_the_product_first">Add the product first...</string>
+    <string name="no_item_found_to_create_the_pdf">No item found to create the PDF</string>
+    <string name="Ok">OK</string>
+    <string name="Yes">Yes</string>
+    <string name="please_connect_to_the_internet">Please connect to the internet</string>
+
+    /**************xml file all string**************************/
+
+    <string name="bill_invoice">Bill Invoice</string>
+    <string name="go_to_home">Go to home</string>
+    <string name="history">History</string>
+    <string name="today">Today </string>
+    <string name="bigning">Bigning</string>
+    <string name="shg_name">SHG Name</string>
+    <string name="create_four_digit_mpin">Create 4 Digit Mpin</string>
+    <string name="confirm_your_mpin">Confirm your Mpin</string>
+    <string name="create_mpin">Create MPIN</string>
+    <string name="bluetooth_printers">Bluetooth Printers</string>
+    <string name="saras_ajeevika">Saras/Aajeevika</string>
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+    <string name="login">Log in</string>
+    <string name="select_shg_group">Select SHG Group</string>
+    <string name="scan">Scan</string>
+    <string name="print">Print</string>
+    <string name="disable">Disable</string>
+    <string name="mela_sales">Mela Sales</string>
+    <string name="please_unlock_first">Please unlock first</string>
+    <string name="forgot_mpin">Forgot Mpin?</string>
+    <string name="scan_wifi">Scan WiFi</string>
+    <string name="name">Name</string>
+    <string name="quantity">Quantity</string>
+    <string name="unit_price">Unit Price</string>
+    <string name="bill_created_date">Bill created Date</string>
+    <string name="select_date">Select Date</string>
+    <string name="sync_data">Sync Data</string>
+    <string name="avail_qty">Available Qty.</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_description">Product Description</string>
+    <string name="product_quantity">Product Quantity</string>
+    <string name="add_in_list">Add in list</string>
+    <string name="total_amount">Total Amount: </string>
+    <string name="genrate_bill">Generate Bill</string>
+    <string name="payment_mode">Payment Mode</string>
+    <string name="invoice_number">Invoice Number   </string>
+    <string name="bill_id">Bill Id </string>
+    <string name="shg_reg_id">SHG Registration Id</string>
+    <string name="view">View</string>
+
+</resources>

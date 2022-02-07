@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:id="@+id/costum_TV"
+    android:layout_marginTop="@dimen/dimen_10"
+    android:layout_marginLeft="@dimen/dimen_10"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Internet!"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:padding="@dimen/dimen_5"
+        android:textSize="@dimen/dimen_25"
+        android:textColor="@color/purple"
+        />
+
+</LinearLayout>

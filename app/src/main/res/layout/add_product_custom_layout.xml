@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space2dp"
+        android:layout_marginRight="@dimen/space2dp"
+        android:layout_marginTop="@dimen/space5dp"
+        android:layout_marginBottom="@dimen/space5dp"
+        android:backgroundTint="@color/white"
+        android:padding="2dp"
+        card_view:cardElevation="7dp"
+        card_view:strokeColor="@color/cardViewBorder"
+        card_view:strokeWidth="2dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/space3dp"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:fontFamily="@font/roboto_bold"
+                android:id="@+id/pNameTv"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quantity"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center_horizontal"
+                android:id="@+id/quantityTv"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/unit_price"
+                android:id="@+id/pPriceTv"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/total_price"
+                android:id="@+id/tPriceTv"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="@string/total_price"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/delete_icon"
+                android:id="@+id/imageDeletItem"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

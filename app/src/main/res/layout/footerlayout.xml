@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.6"
+            android:layout_marginLeft="@dimen/space10dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space5dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="@string/bottom_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_14"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_marginRight="@dimen/space10dp"
+            android:layout_weight="0.4"
+            android:scaleType="fitCenter"
+            android:src="@drawable/nic" />
+    </LinearLayout>
+</LinearLayout>

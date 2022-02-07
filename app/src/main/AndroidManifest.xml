@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nrlm.melasalesoffline">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/aajeevika"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/aajeevika"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MelaSalesOffline"
+        tools:replace="android:allowBackup">
+        <activity android:name=".activity.SalesDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeNoActionBar"></activity>
+        <activity android:name=".activity.OtpVerificationActivity" />
+        <activity android:name=".activity.DeviceListActivity" />
+        <activity android:name=".activity.PrintViaBlueTooth" />
+        <activity
+            android:name=".activity.VerifyMpinActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeNoActionBar" />
+        <activity
+            android:name=".activity.WifiListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeNoActionBar" />
+        <activity
+            android:name=".activity.BarcodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CreateMpinActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeNoActionBar" />
+        <activity
+            android:name=".activity.BillGenerateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeNoActionBar" />
+        <activity
+            android:name=".activity.BillHistoyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeNoActionBar" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeNoActionBar" />
+        <activity
+            android:name=".utils.AnyOrientationCaptureActivity"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeNoActionBar" />
+        <activity
+            android:name=".activity.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+ Set custom default icon. This is used when no icon is set for incoming notification messages.
+      See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_launcher_background" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="my_channel_01" />
+
+        <service
+            android:name=".firebase.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

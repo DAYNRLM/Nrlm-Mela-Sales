@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/shgNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shg_name"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_bold"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/mobileNumberTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginLeft="20dp"
+            android:text="9812343583"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="@color/material_on_surface_emphasis_medium" />
+
+        <TextView
+            android:id="@+id/appVersionTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:text="version: 1.0.0"
+            android:textSize="13sp" />
+
+
+
+    </LinearLayout>
+
+
+    <!-- <ImageView
+         android:id="@+id/ivHeaderBackground"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:alpha="0.2"
+         android:scaleType="centerCrop" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:filterTouchesWhenObscured="true"
+            android:gravity="start"
+            android:text="Name hiiii"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvUserMobileNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:filterTouchesWhenObscured="true"
+            android:gravity="start"
+            android:text="9812343583"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAppVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:filterTouchesWhenObscured="true"
+            android:gravity="start"
+            android:text="version1.0.0"
+            android:textStyle="bold" />
+    </LinearLayout>-->
+</RelativeLayout>

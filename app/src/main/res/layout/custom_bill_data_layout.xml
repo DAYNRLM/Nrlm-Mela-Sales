@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/carViewTheme"
+        app:strokeColor="@color/purple_500"
+        app:strokeWidth="0.5dp">
+
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tv_shgregName"
+                    android:layout_weight="0.7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/dimen_16"
+                    android:text="SHG NAME"/>
+
+               <!-- <TextView
+                    android:id="@+id/tv_shgregId"
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SHG REG ID"/>-->
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_totalAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Sell Amount: "
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_totalInvoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Invoice: "
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

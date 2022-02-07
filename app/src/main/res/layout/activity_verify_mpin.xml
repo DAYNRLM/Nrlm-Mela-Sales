@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/aajeevika" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="@string/please_unlock_first"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <com.andrognito.pinlockview.IndicatorDots
+        android:id="@+id/indicator_dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+
+    <TextView
+        android:layout_below="@+id/indicator_dots"
+        android:visibility="gone"
+        android:id="@+id/tv_mpie_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:text="Wrong PIN 1 attempt remaining."
+        android:gravity="center"
+        android:textColor="@color/color_red"/>
+
+    <com.andrognito.pinlockview.PinLockView
+        android:id="@+id/pin_lock_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_mpie_error"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:keypadButtonSize="60dp"
+        app:keypadShowDeleteButton="true"
+        app:keypadTextColor="@color/purple"
+        app:keypadTextSize="14dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_mpin"
+        android:id="@+id/forgot_pin"
+        android:gravity="right"
+        android:textStyle="italic"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/black"
+        android:layout_marginRight="@dimen/space20dp"
+        android:visibility="gone"
+        android:layout_below="@id/pin_lock_view" />
+
+</RelativeLayout>

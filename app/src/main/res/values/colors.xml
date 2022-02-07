@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#F7000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="screen_backghround">#eeeeee</color>
+    <color name="cardViewBorder">#aab6fe</color>
+    <color name="text_Colour">#424242</color>
+
+
+
+
+    <color name="colorPrimary">#8632FA</color>
+    <color name="colorPrimaryDark">#8632FA</color>
+    <color name="colorAccent">#8632FA</color>
+    <color name="color_FFFFFF">#FFFFFF</color>
+    <color name="color_f38614">#E7B760</color>
+    <color name="color_FFE7B760">#7CF1BB4F</color>
+    <color name="color_7CF8DBA7">#7CF8DBA7</color>
+    <color name="color_7CDBCEAF">#7C9B8143</color>
+    <color name="color_000">#000</color>
+    <color name="color_1E50E9">#1E50E9</color>
+    <color name="color_E2D0B7">#B39975</color>
+    <color name="color_35373c">#35373c</color>
+    <color name="color_f3f3f3">#F8F4F4</color>
+    <color name="purple">#8632FA</color>
+    <color name="historyFlag">#F5F5ED</color>
+    <color name="color_red">#ff0000</color>
+
+
+</resources>

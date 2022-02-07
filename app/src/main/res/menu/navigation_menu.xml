@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_Home"
+            android:title="Home"
+            android:icon="@drawable/home" />
+        <item
+            android:id="@+id/menu_profile"
+            android:title="Profile"
+            android:icon="@drawable/icon_profile" />
+        <item
+            android:visible="false"
+            android:id="@+id/menu_SelectShg"
+            android:title="Switch SHG" />
+
+        <item
+            android:id="@+id/menu_history"
+            android:title="Sale History"
+            android:icon="@drawable/icon_sale_history" />
+
+        <item
+            android:id="@+id/menu_contact_us"
+            android:title="Contact Us"
+            android:icon="@drawable/contact_us" />
+
+        <item
+            android:id="@+id/menu_About_us"
+            android:title="About Us"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/menu_notification"
+            android:title="Notification"
+            android:icon="@drawable/ic_outline_notifications_active_24"/>
+
+        <item
+            android:id="@+id/menu_logout"
+            android:title="Logout"
+            android:icon="@drawable/icon_logout" />
+    </group>
+
+   <!-- <group
+        android:id="@+id/groupid2"
+        android:checkableBehavior="single">
+
+        <item
+            android:title="Home" />
+        <item
+            android:title="Profile" />
+        <item
+            android:title="Switch SHG" />
+    </group>-->
+
+</menu>

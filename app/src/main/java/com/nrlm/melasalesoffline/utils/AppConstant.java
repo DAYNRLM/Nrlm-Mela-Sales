@@ -6,7 +6,7 @@ import android.provider.ContactsContract;
 import static android.os.Environment.DIRECTORY_DOCUMENTS;
 
 public class AppConstant {
-    public static final String MELA_ID = "8";
+    public static final String MELA_ID = "10";
     //public static final String myAppDir = Environment.getExternalStorageDirectory().toString() + "/MelaSales/";
     public static final String myAppDir = Environment.getExternalStoragePublicDirectory(DIRECTORY_DOCUMENTS).getPath() + "/MelaSales/";
     public static final String commoUnsyncFile = "melaBillData.txt";
